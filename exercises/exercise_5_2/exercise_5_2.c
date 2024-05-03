@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
 
    char drink;
-   int cups = 0;
+   int cups;
 
    printf("Do you drink coffee or tea (c/t)?");
    scanf("%c", &drink);
