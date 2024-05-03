@@ -1,15 +1,15 @@
-#include <stdio.h>
+#include <stdio.h>   
 
-int main(void) {
+int main() {   
 
-   int integer = 0;
+   int n;
 
    printf("Enter an integer: ");
-   scanf("%d", &integer);
+   scanf("%d", &n);
 
-   int result = integer % 2;
-   printf("The number is %d", result);
-
-   return 0;
-
+  if(n % 2 ==0){
+              printf("the number is 0");
+  }else{
+             printf("the number is 1");
+  }
 }
