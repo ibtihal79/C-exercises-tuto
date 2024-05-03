@@ -1,38 +1,50 @@
 #include <stdio.h>
 
-int largest(int first, int second, int third);
-int smallest(int first, int second, int third);
+int smallest(int, int, int );
+int largest(int, int, int );
 
-int main(void) {
+int main() {
 
-   int first = 0, second = 0, third = 0;
-
+   int a,b,c;
    printf("Enter the 1. number: ");
-   scanf("%d", &first);
+   scanf("%d", &a);
    printf("Enter the 2. number: ");
-   scanf("%d", &second);
+   scanf("%d", &b);
    printf("Enter the 3. number: ");
-   scanf("%d", &third);
-
-   int largest_num = largest(first, second, third);
-   int smallest_num = smallest(first, second, third);
-
-   printf("Among the numbers you entered,\nthe largest was %d and the smallest was %d.", largest_num, smallest_num);
-
+   scanf("%d", &c);
+   int max= largest(a, b, c);
+   int min= smallest(a, b, c);
+   printf("among the numbers you entered,\n");
+   printf("the largest was %d and the smallest was %d.", max, min);
    return 0;
-
 }
 
-int largest(int first, int second, int third) {
-   int result = first;
-   if (second > result) result = second;
-   if (third > result) result = third;
-   return result;
-}
-
-int smallest(int first, int second, int third) {
-   int result = first;
-   if (second < result) result = second;
-   if (third < result) result = third;
-   return result;
-}
+  
+   int smallest(int a, int b, int c){
+       if(a<b){
+           if(a<c){
+               return a;
+           }
+           return c;
+       }else {
+           if(b<c){
+               return b;
+           }
+           return c;
+       }
+   }
+   
+    int largest(int a, int b, int c){
+       if(a>b){
+           if(a>c){
+               return a;
+           }
+           return c;
+       }else {
+           if(b>c){
+               return b;
+           }
+           return c;
+       }
+   }
+   
