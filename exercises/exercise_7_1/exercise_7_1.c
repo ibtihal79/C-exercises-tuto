@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void cat(void);
 void dog(void);
 void cow(void);
@@ -7,7 +6,7 @@ void cow(void);
 int main(void) {
    int choice;
    do {
-      printf("1: cat\n2: dog\n3: cow\n");
+      printf("1: cat\n 2: dog\n 3: cow\n");
       printf("End with a negative number.\n");
       printf("Select animal: ");
       scanf("%d", &choice);
@@ -27,14 +26,13 @@ int main(void) {
    return 0;
 }
 
-void cat(void) {
-   printf("The cat says meow!\n");
+void cat(void){
+    printf("the cat says meow!");
+}
+void dog(void){
+    printf("the dog says wuff-wuff!");
+}
+void cow(void){
+    printf("the cow says moo!");
 }
 
-void dog(void) {
-   printf("The dog says wuff-wuff!\n");
-}
-
-void cow(void) {
-   printf("The cow says moo!\n");
-}
