@@ -1,28 +1,30 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
 
-   int first_num = 0, second_num = 0, func = 0;
-
-   printf("1: subtraction\n2: addition\n3: multiplication\nSelect function: ");
-   scanf("%d", &func);
+   int a,b;
+   int func;
+   printf("1: subtraction\n 2: addition\n 3: multiplication\n);
 
    printf("Enter the first number: ");
-   scanf("%d", &first_num);
+   scanf("%d", &a);
    printf("Enter the second number: ");
-   scanf("%d", &second_num);
+   scanf("%d", &b);
+   printf("select function");
+   scanf("%d", &func);
+      
 
    switch (func) {
       case 1: {
-         printf("%d-%d=%d", first_num, second_num, first_num - second_num);
+         printf("%d-%d=%d", first_num, second_num, a - b);
          break;
       }
       case 2: {
-         printf("%d+%d=%d", first_num, second_num, first_num + second_num);
+         printf("%d+%d=%d", first_num, second_num, a + b);
          break;
       }
       case 3: {
-         printf("%d*%d=%d", first_num, second_num, first_num * second_num);
+         printf("%d*%d=%d", first_num, second_num, a * b);
          break;
       }
       default: {
