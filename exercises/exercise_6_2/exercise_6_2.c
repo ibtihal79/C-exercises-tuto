@@ -1,18 +1,19 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
 
-   int integer = 0, factorial = 1;
+   int n;
+   int factorial = 1;
 
    printf("Enter an integer: ");
-   scanf("%d", &integer);
+   scanf("%d", &n);
 
    int i;
-   for (i = 1; i <= integer; i++) {
-      factorial *= i;
+   for (i = 1; i <= n; i++) {
+      factorial = factorial * i;                         
    }
 
-   printf("The factorial of %d is %d\n", integer, factorial);
+   printf("The factorial of %d is %d\n", n, factorial);
 
    return 0;
 
