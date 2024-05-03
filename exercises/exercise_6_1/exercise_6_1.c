@@ -1,14 +1,15 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
 
-   int integer = 0;
+   int n;
+   
 
    printf("Enter an integer: ");
-   scanf("%d", &integer);
+   scanf("%d", &n);
 
    int i;
-   for (i = 1; i <= integer; i++) {
+   for (i = 1; i <= n; i++) {
       printf("%d\n", i);
    }
 
